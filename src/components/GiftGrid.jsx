@@ -9,6 +9,13 @@ export const GiftGrid = ({ category }) => {
   return (
     <>
       <h3>{category}</h3>
+      {/* {
+        isLoading ?  (<h2>loading ...</h2>): null
+      } */}
+      {
+        isLoading && (<h2>loading ...</h2>)
+      }
+      
       <div className="card-grid">
         {
             images.map(( image ) => (
